@@ -1,6 +1,6 @@
 #include <stdio.h>
 #define SIZE 5
-main()
+int main()
 {
 	int arr[SIZE] = {1, 2, 3, 4, 5};
 	int key = 2;
@@ -21,9 +21,9 @@ main()
 		else
 		{
 			printf("Element is %d found at %d", arr[mid], mid);
-			return;
+			return 0;
 		}
 	}
 	printf("Element you are looking for is not found\n\n");
-	return;
+	return 1;
 }
